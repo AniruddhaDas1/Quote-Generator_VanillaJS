@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .heading h1 {
+  font-size: 56px;
+  color: rgb(100, 100, 250);
+  margin-bottom: 10px;
+}
+
+.container .heading p {
+  font-size: 20px;
+}
+.container .card {
+  width: 40%;
+  min-height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px 40px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 12px rgb(231, 231, 231);
+}
+
+.container .card .quote{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.container button{
+    border: none;
+    outline: none;
+    padding: 16px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+    background: rgb(100,100,250);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container button:hover{
+    background: rgb(100,100,247);
+}
+
+@media screen and (max-width:768px){
+    .container .card{
+        width: 80%;
+    }
+    .container .heading h1{
+        font-size: 48px;
+    }
+}
